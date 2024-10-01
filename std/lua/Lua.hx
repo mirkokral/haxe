@@ -193,7 +193,7 @@ extern class Lua {
 	/**
 		Loads the chunk from given string.
 	**/
-	static function load(code:haxe.extern.EitherType<String, Void->String>):LoadResult;
+	static function load(code:haxe.extern.EitherType<String, Void->String>, ?chunkName: String, ?mode: String, ?env: Table<Dynamic, Dynamic>):LoadResult;
 }
 
 /**
